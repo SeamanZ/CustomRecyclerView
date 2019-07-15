@@ -91,7 +91,7 @@ public class NestedRecyclerView2 extends RecyclerView implements NestedScrolling
         if (velocityY > 0 && !isScrollToBottom()) {
             return super.fling(0, (int) velocityY);
         } else {
-            return super.onNestedPreFling(target, velocityX, velocityY);
+            return false;
         }
     }
 
